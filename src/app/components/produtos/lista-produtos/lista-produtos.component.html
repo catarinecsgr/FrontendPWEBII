@@ -21,10 +21,12 @@
         <td>{{ prod.validade | date: "shortDate" }}</td>
         <td>{{ prod.precoProduto | currency: "BRL" }}</td>
         <th>
-          <button class="btn btn-warning">
+          <button class="btn btn-warning" routerLink="/produtos/atualizar/{{prod.id}}">
             <i class="fa fa-pencil" aria-hidden="true"></i>
           </button>&nbsp;
-          <button class="btn btn-danger n1-2">
+
+          <button class="btn btn-danger n1-2"
+          (click)="deletar(prod)">
             <i class="fa fa-trash-o" aria-hidden="true"></i>
           </button>
         </th>
