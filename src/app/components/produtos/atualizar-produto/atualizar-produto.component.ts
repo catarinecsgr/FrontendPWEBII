@@ -40,5 +40,6 @@ export class AtualizarProdutoComponent implements OnInit {
       this.router.navigate(['/produtos']);
 
     });
+
   }
 }
